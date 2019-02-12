@@ -1,0 +1,195 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><meta name="google-site-verification" content="_wxrTRAcgx3bHof630x75_YKSXklUH55NkOAA_5GfmU"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/favicon.ico"><title>1.3.2 Release - RuneLite</title><meta name="description" content="Movable overlays, revamped clue scoll plugin, and tithe farm plugin"><meta name="author" content="Adam"><script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.includes"></script><script type="text/javascript">!function(i){if(i.search){var l={};i.search.slice(1).split("&").forEach(function(i){var a=i.split("=");l[a[0]]=a.slice(1).join("=").replace(/~and~/g,"&")}),void 0!==l.p&&window.history.replaceState(null,null,i.pathname.slice(0,-1)+(l.p||"")+(l.q?"?"+l.q:"")+i.hash)}}(window.location)</script><link href="/static/css/76.b7aeb212.chunk.css" rel="stylesheet"><link href="/static/css/main.59a61d7f.chunk.css" rel="stylesheet"><script charset="utf-8" src="/static/js/3.803d6da2.chunk.js"></script><script charset="utf-8" src="/static/js/24.d97e5ffd.chunk.js"></script></head><body><div id="root"><div style="height: 100%;"><div class="fixed-top animated loader" style="display: none;"></div><nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white"><a class="navbar-brand" activeclassname="active" href="/"><img src="/img/logo.png" class="icon" alt="RuneLite"> Home</a><input type="checkbox" id="navbar-check-box"><label for="navbar-check-box" class="navbar-toggler"><span class="navbar-toggler-icon"></span></label><div class="collapse navbar-collapse" id="navbar"><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" activeclassname="active" href="/features"><i class="fas fa-cogs"></i> Features</a></li><li class="nav-item"><a class="nav-link" activeclassname="active" href="/blog"><i class="fas fa-newspaper"></i> Blog</a></li><li class="nav-item"><a class="nav-link" href="https://github.com/runelite/runelite/wiki"><i class="fas fa-file-alt"></i> Wiki</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown"><i class="fas fa-font"></i> API</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="https://static.runelite.net/api/runelite-api/">RuneLite API</a><a class="dropdown-item" href="https://static.runelite.net/api/runelite-client/">RuneLite Client API</a></div></li><li class="nav-item"><a class="nav-link" activeclassname="active" href="/tag"><i class="fas fa-code"></i> Tags</a></li></ul><ul class="navbar-nav ml-auto"><li class="nav-item"><a class="nav-link" href="https://discord.gg/mePCs8U" title="Discord"><i class="fab fa-discord"></i><span class="d-lg-none"> Discord</span></a></li><li class="nav-item"><a class="nav-link" href="https://twitter.com/RuneLiteClient" title="Twitter"><i class="fab fa-twitter"></i><span class="d-lg-none"> Twitter</span></a></li><li class="nav-item"><a class="nav-link" href="https://github.com/runelite" title="GitHub"><i class="fab fa-github"></i><span class="d-lg-none"> GitHub</span></a></li><li class="nav-item"><a class="nav-link" href="https://www.patreon.com/runelite"><i class="fab fa-patreon"></i> Become a patron</a></li><li class="nav-item"><a class="nav-link" href="https://github.com/runelite/runelite/stargazers"><i class="fas fa-star"></i>  Stargazers</a></li></ul></div></nav><div class="container" id="layout"><h1>1.3.2 Release</h1><p class="text-muted">11 months ago by Adam</p><hr><div class="markdown-body"><p>Movable overlay support is finally here! This allows you to move any RuneLite
+Overlay to any position on the screen. Hold alt to do so. There are 4 (or 5 on
+resizable) "snap corners" provided where, if you move an overlay to a snap
+corner, the client will dynamically place the overlay to not draw on top of
+other overlays. Thanks to <a href="https://github.com/deathbeam">@deathbeam</a> for this
+feature.</p>
+<p><img src="/img/blog/1.3.2-Release/overlays.gif" alt="overlay"></p>
+<p>The clue scroll plugin has been rewritten, and now supports all clue types.
+Thanks to <a href="https://github.com/devlotto">@devLotto</a> for their work on this.</p>
+<p><img src="/img/blog/1.3.2-Release/clue1.png" alt="clue1">
+<img src="/img/blog/1.3.2-Release/clue2.png" alt="clue2"></p>
+<p>A tithe farm plugin was added by <a href="https://github.com/unmoon">@Unmoon</a>, which tracks plant growth stages and state.</p>
+<p><img src="/img/blog/1.3.2-Release/tithe.png" alt="tithe"></p>
+<p>The agility plugin now has an additional lap counter overlay by <a href="https://github.com/sethtroll">@sethtroll</a>:</p>
+<p><img src="/img/blog/1.3.2-Release/agility.png" alt="agility"></p>
+<p>There are also several smaller improvements and bug fixes, including:</p>
+<ul>
+<li>The instance map plugin maps now look the same as the ingame minimap</li>
+<li>Mouse tooltips were moved to the bottom right corner of the mouse, and are now
+hidden when the game has a tooltip open.</li>
+<li>Fixed slayer points and streak being lost on restart</li>
+<li>A kingdom of Miscellania plugin has been added to show you your support, and
+optionally warn if it is unpopular</li>
+<li>The raids points interface has been replaced with an overlay that also
+includes party size. As with the other overlays, this is now movable.</li>
+<li>Antipoison and superantipoision were added to the timers plugin</li>
+<li>Add holy wrench effect to itemstats plugin</li>
+<li>Sort infoboxes by plugin and priority</li>
+<li>Add Silver sickle(b) to menu swapper plugin</li>
+<li>Expand list of skill abbreviations for the !lvl command</li>
+<li>Add spicey stew to item stats plugin</li>
+<li>Add cave horror cannon spot</li>
+<li>Fix lizardmen cannon spot</li>
+</ul>
+<p>Enjoy!</p>
+<p>- Adam</p>
+<h3 id="new-commits">New commits</h3>
+<p>We had 15 contributors this release!</p>
+<pre><code>Adam (14):
+      config manager: check for invalid keynames in loadFromFile
+      config manager: add get and set configuration methods for objects
+      Add movable overlay support
+      travis: remove oracle-java8-installer as it broke and use the oraclejdk travis ships, which is new enough now
+      feed plugin: make scheduled method public
+      wsservice: remove sessions on close or error
+      instance map plugin: rewrite to use client minimap code
+      runescape-client: export varc related classes/fields
+      Add varc api accessors, and tooltip varclient
+      mouse highlight plugin: hide tooltips when the client is showing tooltips
+      xp globes: move expire check to a scheduled method
+      cluescroll overlay: set priority to low
+      agility lap overlay: set priority to low
+      slayer plugin: load points and streak on login and startup
+
+Charlie Waters (2):
+      Fix clue scroll plugin game object query for world overlay
+      Fix some clue solutions
+
+Infinitay (4):
+      Added Kingdom of Miscellania plugin
+      Added daily task indicators plugin
+      Fixed checkCanCollectEssence method
+      Disabled plugin by default  - Hopefully will encourage users seeking this    feature to configure it to their liking.    For example, if ironman, disable herb box.
+
+Joshua Filby (50):
+      refactor: rename widgetSettings to clientVarps
+      refactor: rename settings to serverVarps
+      refactor: remove unnecessary Client#getSettings(), use Client#getVarps()
+      fix: hook clientVarps instead of settings
+      refactor: rename get/set settings to get/set varp
+      refactor(widget): rename method4463 to decodeListener
+      refactor(widget): rename method4464 to decodeTransmitList
+      refactor(widget): rename field2898 to onLoadListener
+      refactor(widget): rename mouseEnterListener to onMouseOverListener
+      refactor(widget): rename mouseExitListener to onMouseLeaveListener
+      refactor(widget): rename field2807 to onTargetLeaveListener
+      refactor(widget): rename field2908 to onTargetEnterListener
+      refactor(widget): rename configListenerArgs to onVarTransmitListener
+      refactor(widget): rename tableListenerArgs to onInvTransmitListener
+      refactor(widget): rename skillListenerArgs to onStatTransmitListener
+      refactor(widget): rename renderListener to onTimerListener
+      refactor(widget): rename field2917 to onOpListener
+      refactor(widget): rename mouseHoverListener to onMouseRepeatListener
+      refactor(widget): rename field2899 to onClickListener
+      refactor(widget): rename field2900 to onClickRepeatListener
+      refactor(widget): rename field2901 to onReleaseListener
+      refactor(widget): rename field2902 to onHoldListener
+      refactor(widget): rename field2906 to onDragListener
+      refactor(widget): rename field2907 to onDragCompleteListener
+      refactor(widget): rename scrollListener to onScrollWheelListener
+      refactor(widget): rename configTriggers to varTransmitTriggers
+      refactor(widget): rename tableModTriggers to invTransmitTriggers
+      refactor(widget): rename skillTriggers to statTransmitTriggers
+      refactor(widget): rename selectedAction to targetVerb
+      refactor(widget): rename field2895 to dragRenderBehavior
+      refactor(widget): rename field2894 to dragDeadTime
+      refactor(widget): rename field2817 to dragDeadZone
+      refactor(widget): rename config to clickMask
+      refactor(widget): rename name to opBase
+      refactor(widget): rename field2866 to offsetX2d
+      refactor(widget): rename field2867 to offsetY2d
+      refactor(widget): rename field2919 to onChatTransmitListener
+      refactor(widget): rename field2920 to onKeyListener
+      refactor(widget): rename field2921 to onFriendTransmitListener
+      refactor(widget): rename field2922 to onClanTransmitListener
+      refactor(widget): rename field2923 to onMiscTransmitListener
+      refactor(widget): rename field2924 to onDialogAbortListener
+      refactor(widget): rename field2925 to onSubChangeListener
+      refactor(widget): rename field2873 to onStockTransmitListener
+      refactor(widget): rename field2820 to onCamFinishedListener
+      refactor(widget): rename field2926 to onResizeListener
+      refactor(widget): rename mouseActionsPresent to hasListener
+      refactor(widget): rename field2951 to noScrollThrough
+      fix: import correct field for click masks
+      fix: import correct field for op base
+
+Kamiel (6):
+      Item price tooltip: use linebreak instead of comma
+      Fix ranging potion showing invalid boost value
+      Ground items: Only consume mouse clicks when a checkbox has been clicked
+      Show remaining time on successful hunter traps
+      Add raid party size varbit
+      Replace raids points widget with custom overlay
+
+Lotto (9):
+      runelite-api: make InventoryItemQuery take in InventoryID
+      runelite-api: add emote window widget info
+      runelite-client: pass in z offset into renderActorOverlayImage
+      runelite-client: extend overlay util to render Areas and LocalPoint
+      runelite-client: add line wrapping to PanelComponent lines
+      runelite-api: add sprite ids class
+      runelite-client: add resource images to clue scroll plugin
+      runelite-client: revamp clue scroll plugin
+      runelite-client: remove old clue scroll enums
+
+Lyn Levenick (2):
+      Add notifications for NMZ power-up spawns
+      Fix tray icon crash when clicked quickly on start
+
+Max Weber (10):
+      itemstats: Support holy wrench effect
+      configmanager: synchronize disk access
+      itemstats: use EnergyStat instead of anonymous stat
+      menumanager: Actually remove menu options
+      injector: Allow &lt;clinit&gt; an &lt;init&gt; injection with multiple mixins on the same class
+      deob: Always use / delimters in pool.Class
+      injector: Allow assertions to be used in mixins
+      mixins: Use assert in scriptvm
+      runelite-client: Add ClientThread to aid in synchronizing with the client
+      Ensure createItemSprite is called on the game thread
+
+Seth (4):
+      info boxes: associate plugins to infoboxes
+      info boxes: sort boxes by priority
+      jewelrycharges: Add Teleport crystal(5)
+      agility plugin: Add lap counter
+
+ShaunDreclin (1):
+      Add Silver sickle(b) to menu entry swapper plugin.
+
+SoyChai (4):
+      Expand list of skill abbreviations for the !Lvl command
+      Expand tests for and document the Experience API
+      Add spicy stews to item stats plugin
+      Extra documentation for the Stat and StatChange classes
+
+Tomas Slusny (18):
+      Add Cave Horror cannon spot
+      Fix Lizardmen cannon spot plane
+      Add support for points to ConfigManager
+      Add support for getting real canvas dimensions
+      Calculate overlay bounds also for dynamic overlays
+      Create translated copy of OverlayBounds
+      Improve caching of game-related variables
+      Change multiple overlay lists to map
+      Instance map improvements + moving
+      Make unsetConfiguration non-blocking
+      Disable overlay dragging mode on focus lost
+      Remove not needed parent point and minimap orb
+      Move tooltip to the right-bottom of the mouse
+      Add null-check for overlays in OverlayRenderer
+      Add getCanvasOffset to clientUI, fix screenshots
+      Add formatNumber methods to StackFormatter
+      Expand panels based on click event not isSelected
+      Add null-check for Client to MenuManager
+
+Unmoon (1):
+      Add Tithe Farm plugin
+
+jamesahhh (1):
+      Add antipoison and superantipoison timers (#1159)
+
+rune3132 (1):
+      Additions to Jewellery count plugin
+</code></pre></div><div><hr>Developed with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i> using <a href="https://getbootstrap.com/">Bootstrap</a>, <a href="https://reactjs.org/">React</a> and <a href="https://fontawesome.com/">Font Awesome</a></div></div></div></div><script>!function(o){function e(e){for(var c,f,d=e[0],t=e[1],r=e[2],n=0,a=[];n<d.length;n++)f=d[n],l[f]&&a.push(l[f][0]),l[f]=0;for(c in t)Object.prototype.hasOwnProperty.call(t,c)&&(o[c]=t[c]);for(s&&s(e);a.length;)a.shift()();return i.push.apply(i,r||[]),u()}function u(){for(var e,c=0;c<i.length;c++){for(var f=i[c],d=!0,t=1;t<f.length;t++){var r=f[t];0!==l[r]&&(d=!1)}d&&(i.splice(c--,1),e=b(b.s=f[0]))}return e}var f={},a={78:0},l={78:0},i=[];function b(e){if(f[e])return f[e].exports;var c=f[e]={i:e,l:!1,exports:{}};return o[e].call(c.exports,c,c.exports,b),c.l=!0,c.exports}b.e=function(i){var e=[];a[i]?e.push(a[i]):0!==a[i]&&{5:1,8:1,9:1}[i]&&e.push(a[i]=new Promise(function(e,d){for(var c="static/css/"+({}[i]||i)+"."+{1:"31d6cfe0",2:"31d6cfe0",3:"31d6cfe0",4:"31d6cfe0",5:"ea141447",6:"31d6cfe0",7:"31d6cfe0",8:"448da3af",9:"2d835122",10:"31d6cfe0",11:"31d6cfe0",12:"31d6cfe0",13:"31d6cfe0",14:"31d6cfe0",15:"31d6cfe0",16:"31d6cfe0",17:"31d6cfe0",18:"31d6cfe0",19:"31d6cfe0",20:"31d6cfe0",21:"31d6cfe0",22:"31d6cfe0",23:"31d6cfe0",24:"31d6cfe0",25:"31d6cfe0",26:"31d6cfe0",27:"31d6cfe0",28:"31d6cfe0",29:"31d6cfe0",30:"31d6cfe0",31:"31d6cfe0",32:"31d6cfe0",33:"31d6cfe0",34:"31d6cfe0",35:"31d6cfe0",36:"31d6cfe0",37:"31d6cfe0",38:"31d6cfe0",39:"31d6cfe0",40:"31d6cfe0",41:"31d6cfe0",42:"31d6cfe0",43:"31d6cfe0",44:"31d6cfe0",45:"31d6cfe0",46:"31d6cfe0",47:"31d6cfe0",48:"31d6cfe0",49:"31d6cfe0",50:"31d6cfe0",51:"31d6cfe0",52:"31d6cfe0",53:"31d6cfe0",54:"31d6cfe0",55:"31d6cfe0",56:"31d6cfe0",57:"31d6cfe0",58:"31d6cfe0",59:"31d6cfe0",60:"31d6cfe0",61:"31d6cfe0",62:"31d6cfe0",63:"31d6cfe0",64:"31d6cfe0",65:"31d6cfe0",66:"31d6cfe0",67:"31d6cfe0",68:"31d6cfe0",69:"31d6cfe0",70:"31d6cfe0",71:"31d6cfe0",72:"31d6cfe0",73:"31d6cfe0",74:"31d6cfe0",75:"31d6cfe0",77:"31d6cfe0"}[i]+".chunk.css",t=b.p+c,f=document.getElementsByTagName("link"),r=0;r<f.length;r++){var n=(o=f[r]).getAttribute("data-href")||o.getAttribute("href");if("stylesheet"===o.rel&&(n===c||n===t))return e()}var a=document.getElementsByTagName("style");for(r=0;r<a.length;r++){var o;if((n=(o=a[r]).getAttribute("data-href"))===c||n===t)return e()}var u=document.createElement("link");u.rel="stylesheet",u.type="text/css",u.onload=e,u.onerror=function(e){var c=e&&e.target&&e.target.src||t,f=new Error("Loading CSS chunk "+i+" failed.\n("+c+")");f.request=c,d(f)},u.href=t,document.getElementsByTagName("head")[0].appendChild(u)}).then(function(){a[i]=0}));var f=l[i];if(0!==f)if(f)e.push(f[2]);else{var c=new Promise(function(e,c){f=l[i]=[e,c]});e.push(f[2]=c);var d,t=document.getElementsByTagName("head")[0],r=document.createElement("script");r.charset="utf-8",r.timeout=120,b.nc&&r.setAttribute("nonce",b.nc),r.src=b.p+"static/js/"+({}[i]||i)+"."+{1:"49eb2e87",2:"f62168c4",3:"803d6da2",4:"840b04fd",5:"4d289195",6:"0baf57c9",7:"0f53c797",8:"14504442",9:"046bbcd9",10:"384b2285",11:"963321ca",12:"e18a8995",13:"db6ebe67",14:"b25bf9e6",15:"1afc0c54",16:"6d979852",17:"62b3eebc",18:"66690c50",19:"50520300",20:"cb4d1423",21:"b1296133",22:"e6ce89fd",23:"967ab970",24:"d97e5ffd",25:"29627cad",26:"d11c6852",27:"47e45147",28:"8b764edb",29:"2de42293",30:"07fbafc0",31:"4dab9ef3",32:"940c2fed",33:"5a987e7e",34:"45348f79",35:"1b184129",36:"db5eda89",37:"ac39a025",38:"987a5853",39:"0a305bbd",40:"b48753df",41:"14ec817f",42:"a7debb32",43:"fc4152b9",44:"d1364dc9",45:"043a0832",46:"b1596ef9",47:"361b694b",48:"9f0b5b96",49:"3eb1d30a",50:"2a7e4122",51:"89966269",52:"dac4e195",53:"138f44cf",54:"6bae859e",55:"7667c1b0",56:"c2a5ff84",57:"af6a4913",58:"c192f92a",59:"e3ac44c2",60:"a4eb0335",61:"272ee426",62:"d772e755",63:"6b31c58f",64:"85c11220",65:"885798aa",66:"74d7da8d",67:"8f6fc9d8",68:"bc8f680e",69:"1c0b07a9",70:"c3f4fd97",71:"c0703bc0",72:"a49c77dd",73:"f450d439",74:"0734292b",75:"032d6610",77:"d9c7dde3"}[i]+".chunk.js",d=function(e){r.onerror=r.onload=null,clearTimeout(n);var c=l[i];if(0!==c){if(c){var f=e&&("load"===e.type?"missing":e.type),d=e&&e.target&&e.target.src,t=new Error("Loading chunk "+i+" failed.\n("+f+": "+d+")");t.type=f,t.request=d,c[1](t)}l[i]=void 0}};var n=setTimeout(function(){d({type:"timeout",target:r})},12e4);r.onerror=r.onload=d,t.appendChild(r)}return Promise.all(e)},b.m=o,b.c=f,b.d=function(e,c,f){b.o(e,c)||Object.defineProperty(e,c,{enumerable:!0,get:f})},b.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},b.t=function(c,e){if(1&e&&(c=b(c)),8&e)return c;if(4&e&&"object"==typeof c&&c&&c.__esModule)return c;var f=Object.create(null);if(b.r(f),Object.defineProperty(f,"default",{enumerable:!0,value:c}),2&e&&"string"!=typeof c)for(var d in c)b.d(f,d,function(e){return c[e]}.bind(null,d));return f},b.n=function(e){var c=e&&e.__esModule?function(){return e.default}:function(){return e};return b.d(c,"a",c),c},b.o=function(e,c){return Object.prototype.hasOwnProperty.call(e,c)},b.p="/",b.oe=function(e){throw console.error(e),e};var c=window.webpackJsonp=window.webpackJsonp||[],d=c.push.bind(c);c.push=e,c=c.slice();for(var t=0;t<c.length;t++)e(c[t]);var s=d;u()}([])</script><script src="/static/js/76.695c80ef.chunk.js"></script><script src="/static/js/main.bb4140ea.chunk.js"></script></body></html>
