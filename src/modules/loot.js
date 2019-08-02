@@ -77,7 +77,6 @@ export const {
 export default handleActions(
   {
     [setLoot]: (state, { payload }) => ({
-      ...state,
       data: state.data.concat(payload)
     }),
     [setLootRange]: (state, { payload }) => ({
