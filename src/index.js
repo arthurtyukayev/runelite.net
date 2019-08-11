@@ -1,3 +1,4 @@
+import 'whatwg-fetch'
 import { h, render } from 'preact'
 import { Provider } from 'preact-redux'
 import App from './components/app'
