@@ -1,0 +1,5 @@
+name: 'Install NPM Dependencies'
+description: 'Downloads and install node modules'
+author: 'Arthur Tyukayev'
+steps:
+  - run: npm install

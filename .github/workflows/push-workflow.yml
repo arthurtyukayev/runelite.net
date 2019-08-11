@@ -1,0 +1,15 @@
+name: Push
+on: [push]
+
+jobs:
+  build:
+    name: Push workflow
+    # This job runs on Linux
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v1
+        with:
+          version: '8.x'
+      - uses: ./install-node-modules.yml
+      - uses: ./run-cypress-tests.yml

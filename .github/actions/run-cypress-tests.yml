@@ -1,0 +1,5 @@
+name: 'Run Cypress E2E'
+description: 'Runs the local server and runs end-to-end testing using Cypress'
+author: 'Arthur Tyukayev'
+steps:
+  - run: npm run test:e2e
